@@ -1,0 +1,32 @@
+@import "/src/app/shared/styles/colors";
+
+img {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.btn {
+  align-items: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  justify-content: center;
+  line-height: 2;
+  padding: 0 16px;
+  position: relative;
+  text-align: left;
+}
+
+.btn--primary {
+  color: $primary;
+  background-color: $accent;
+  box-shadow: 0 3px 0 0 rgba(199, 64, 27, 1);
+  border: 0;
+}
+
+.btn--secondary {
+  background-color: $primary;
+  color: $accent;
+  border: 2px solid $accent;
+}

@@ -1,0 +1,4 @@
+{
+  "/api/quarters": "/quarters",
+  "/api/quarters?:id": "/quarters"
+}

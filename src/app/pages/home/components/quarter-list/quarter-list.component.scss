@@ -1,0 +1,12 @@
+.card {
+  display: inline-block;
+  margin: 0 15px;
+  width: 211px;
+  height: 90px;
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+

@@ -1,0 +1,19 @@
+@import "/src/app/shared/styles/colors";
+
+.pie-chart {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  background: conic-gradient(
+      $chart 0deg 70%,
+      transparent 0% 0%
+  );
+}
+
+.full-percentage {
+  background-color:  $chart;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

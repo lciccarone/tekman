@@ -1,0 +1,10 @@
+<app-card [showShadow]='true'>
+  <div class='card-body'>
+    <div>
+      <b>{{quarter.number}}º Trimestre</b>
+      <p>{{quarter.sessionInformation.current}}/{{quarter.sessionInformation.total}} sesiones</p>
+    </div>
+    <app-pie-chart class='pie-chart'
+                   [percentage]='quarter.sessionInformation.current / quarter.sessionInformation.total * 100'></app-pie-chart>
+  </div>
+</app-card>

@@ -1,0 +1,6 @@
+<app-session-selector
+  *ngIf='(loading$ | async) === false'
+  [quarters]='quarters$ | async'
+></app-session-selector>
+<h2>Temario</h2>
+<app-quarter-list [quarters]='quarters$ | async'></app-quarter-list>

@@ -1,0 +1,9 @@
+<app-card class='card'>
+  <b>Vuelve donde lo dejaste</b>
+  <p>{{lastQuarter.number}}ªtrimestre <span>Sesión {{lastSession.number}}, {{lastSession.name}}</span></p>
+  <div class='button-container'>
+    <app-button class='button' [iconName]='"play"' [label]='"Reproduccion ordenada"'></app-button>
+    <app-button class='button' [iconName]='"random"' [variant]='"secondary"' [label]='"Aleatorio"'></app-button>
+    <app-button class='button' [iconName]='"next"' [variant]='"secondary"' [label]='"Siguiente sesion"'></app-button>
+  </div>
+</app-card>

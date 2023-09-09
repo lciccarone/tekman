@@ -1,0 +1,18 @@
+.button-container {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.button {
+  margin: 5px;
+  display: inline-block;
+}
+
+.button:first-child {
+  margin-left: 0;
+}
+
+.card {
+  width: 80vw;
+  display: block;
+}

@@ -1,0 +1,85 @@
+{
+  "quarters": [
+    {
+      "id": 1,
+      "number": 1,
+      "sessionInformation": {
+        "sessions": [
+          {
+            "number": 1,
+            "name": "Sesión 1",
+            "status": "SEEN",
+            "isLastView": false
+          },
+          {
+            "number": 2,
+            "name": "Sesión 2",
+            "status": "SEEN",
+            "isLastView": false
+          },
+          {
+            "number": 3,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false
+          }
+        ],
+        "current": 3,
+        "total": 3
+      },
+      "name": "Trimestre 1"
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "sessionInformation": {
+        "sessions": [
+          {
+            "number": 1,
+            "name": "Sesión 1",
+            "status": "NOT_SEEN",
+            "isLastView": false
+          },
+          {
+            "number": 2,
+            "name": "Sesión 2",
+            "status": "NOT_SEEN",
+            "isLastView": false
+          },
+          {
+            "number": 3,
+            "name": "Sesión 3",
+            "status": "SEEN",
+            "isLastView": true
+          }
+        ],
+        "current": 2,
+        "total": 4
+      },
+      "name": "Trimestre 2"
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "sessionInformation": {
+        "sessions": [
+          {
+            "number": 1,
+            "name": "Sesión 1",
+            "status": "SEEN",
+            "isLastView": false
+          },
+          {
+            "number": 2,
+            "name": "Sesión 2",
+            "status": "NOT_SEEN",
+            "isLastView": false
+          }
+        ],
+        "current": 1,
+        "total": 2
+      },
+      "name": "Trimestre 3"
+    }
+  ]
+}

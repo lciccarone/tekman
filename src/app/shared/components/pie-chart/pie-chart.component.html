@@ -1,0 +1,12 @@
+<div class='pie-chart'
+     *ngIf='percentage !== 100'
+     [style.width]='width + "px"'
+     [style.height]='height + "px"'
+     [style.background]='"conic-gradient(#ed993f 0deg " + percentage + "%, transparent 0% 0%)"'>
+</div>
+<div class='full-percentage'
+     *ngIf='percentage === 100'
+     [style.width]='width + "px"'
+     [style.height]='height + "px"'>
+  <img [src]='"../../assets/icons/check.svg"' height='24' width='24'>
+</div>
