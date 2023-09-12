@@ -1,0 +1,29 @@
+@import "/src/app/shared/styles/colors";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $secondary;
+  color: $primary;
+}
+
+.right-content {
+  display: flex;
+}
+
+.left-content {
+  flex: 1;
+}
+
+button {
+  margin-left: 20px;
+  background-color: $primary;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+

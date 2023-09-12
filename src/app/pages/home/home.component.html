@@ -1,6 +1,7 @@
+<app-header (toggleConfigurationEmitter)='toggleConfiguration()'></app-header>
 <app-session-selector
   *ngIf='(loading$ | async) === false'
   [quarters]='quarters$ | async'
 ></app-session-selector>
-<h2>Temario</h2>
+<h2>{{'home.agenda' | translate}}</h2>
 <app-quarter-list [quarters]='quarters$ | async'></app-quarter-list>

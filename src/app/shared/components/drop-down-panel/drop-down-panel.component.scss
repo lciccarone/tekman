@@ -1,0 +1,26 @@
+@import "/src/app/shared/styles/colors";
+
+.panel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $grey_translucent;
+  filter: blur(0) !important;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  background-color: $primary;
+  padding: 20px;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.panel p {
+  margin: 0;
+}

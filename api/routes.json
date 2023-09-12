@@ -1,4 +1,4 @@
 {
   "/api/quarters": "/quarters",
-  "/api/quarters?:id": "/quarters"
+  "/api/quarters?:id:course": "/quarters"
 }

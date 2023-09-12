@@ -1,0 +1,7 @@
+<app-card>
+  <b>{{'detail.quarter_sessions' | translate: {number: quarter.number} }} {{quarter.sessionInformation.current}}
+    / {{quarter.sessionInformation.total}}</b>
+  <app-session-item *ngFor='let session of quarter.sessionInformation.sessions'
+                    [session]='session' [isSelected]='sessionSelected === session.number'
+                    (clickEmitter)='selectSession($event)'></app-session-item>
+</app-card>

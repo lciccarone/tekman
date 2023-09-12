@@ -6,6 +6,8 @@ import { takeUntil } from 'rxjs/operators';
 import { QuartersState } from '../../store/quarters/quarters.state';
 import { selectLoading, selectQuarters } from '../../store/quarters/quarters.selectors';
 import { getQuartersRequest } from '../../store/quarters/quarters.actions';
+import { ConfigurationService } from '../../core/services/configuration.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,12 +18,18 @@ export class HomeComponent implements OnInit, OnDestroy {
   public quarters$: Observable<Quarter[]>;
   public loading$: Observable<boolean>;
   public quarterWithLastSessionView: Quarter;
+  private isConfigurationOpen: boolean = false;
   private onDestroy$: Subject<boolean> = new Subject();
 
-  constructor(private quartersState$: Store<QuartersState>) {}
+  constructor(
+    private quartersState$: Store<QuartersState>,
+    private configurationService: ConfigurationService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.quartersState$.dispatch(getQuartersRequest({}));
+    const course = this.route.snapshot.queryParams['course'] ?? 1;
+    this.quartersState$.dispatch(getQuartersRequest({ course }));
     this.quarters$ = this.quartersState$.pipe(
       takeUntil(this.onDestroy$),
       select(selectQuarters),
@@ -30,6 +38,11 @@ export class HomeComponent implements OnInit, OnDestroy {
       })
     );
     this.loading$ = this.quartersState$.pipe(takeUntil(this.onDestroy$), select(selectLoading));
+  }
+
+  public toggleConfiguration(): void {
+    this.isConfigurationOpen = !this.isConfigurationOpen;
+    this.configurationService.toggleConfiguration(this.isConfigurationOpen);
   }
 
   private findQuarterWithLastSessionView(quarters: Quarter[]): Quarter {

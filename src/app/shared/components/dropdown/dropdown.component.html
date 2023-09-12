@@ -1,9 +1,6 @@
-<div class="dropdown-container">
-  <label class="floating-label">Selecciona una opción</label>
-  <select required>
-    <option value="" disabled selected></option>
-    <option value="option1">Opción 1</option>
-    <option value="option2">Opción 2</option>
-    <option value="option3">Opción 3</option>
+<div [formGroup]='form' class='dropdown-container'>
+  <label [for]='label' class='floating-label'>{{label}}</label>
+  <select [formControlName]='formControlNameSelect'>
+    <option *ngFor='let option of options' [value]='option.value'>{{option.label}}</option>
   </select>
 </div>

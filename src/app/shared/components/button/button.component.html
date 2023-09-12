@@ -1,4 +1,4 @@
 <button class='btn' [ngClass]='{"btn--primary": variant === "primary", "btn--secondary": variant === "secondary"}'>
-  <img [src]='"../../assets/icons/" + iconName +".svg"' height='24' width='24'>
+  <img *ngIf='iconName' [src]='"../../assets/icons/" + iconName +".svg"' height='24' width='24'>
   {{label}}
 </button>

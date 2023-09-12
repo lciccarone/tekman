@@ -25,7 +25,8 @@ export class QuarterDetailComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.quartersState$.dispatch(getQuartersRequest({ id }));
+    const course = this.route.snapshot.queryParams['course'];
+    this.quartersState$.dispatch(getQuartersRequest({ course, id }));
     this.quarter$ = this.quartersState$.pipe(
       takeUntil(this.onDestroy$),
       select(selectQuarters),

@@ -12,6 +12,10 @@ const routes: Routes = [
       import('./pages/quarter-detail/quarter-detail.module').then((module) => module.QuarterDetailModule)
   },
   {
+    path: 'play',
+    loadChildren: () => import('./pages/play-video/play-video.module').then((module) => module.PlayVideoModule)
+  },
+  {
     path: '**',
     redirectTo: 'home'
   }

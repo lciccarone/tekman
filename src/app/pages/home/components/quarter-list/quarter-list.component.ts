@@ -13,6 +13,8 @@ export class QuarterListComponent {
   constructor(private router: Router) {}
 
   redirectToDetail(id: number): void {
-    this.router.navigate(['/quarter', id]);
+    this.router.navigate(['/quarter', id], {
+      queryParamsHandling: 'merge'
+    });
   }
 }

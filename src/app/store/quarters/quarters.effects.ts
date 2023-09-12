@@ -21,7 +21,7 @@ export class QuartersEffects {
     this.actions$.pipe(
       ofType(getQuartersRequest),
       switchMap((action) =>
-        this.quarterService.getQuarters(action.id).pipe(
+        this.quarterService.getQuarters(action.course, action.id).pipe(
           takeUntil(this.actions$.pipe(ofType(getQuartersRequestCancel))),
           map((quarters: Quarter[]) => getQuartersRequestSuccess({ quarters })),
           catchError((error) => getQuartersRequestFail(error))

@@ -1,6 +1,7 @@
 {
   "quarters": [
     {
+      "course": 1,
       "id": 1,
       "number": 1,
       "sessionInformation": {
@@ -9,19 +10,31 @@
             "number": 1,
             "name": "Sesión 1",
             "status": "SEEN",
-            "isLastView": false
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 5,
+              "totalVideos": 20
+            }
           },
           {
             "number": 2,
             "name": "Sesión 2",
             "status": "SEEN",
-            "isLastView": false
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 15
+            }
           },
           {
             "number": 3,
             "name": "Sesión 3",
             "status": "NOT_SEEN",
-            "isLastView": false
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
           }
         ],
         "current": 3,
@@ -30,6 +43,7 @@
       "name": "Trimestre 1"
     },
     {
+      "course": 1,
       "id": 2,
       "number": 2,
       "sessionInformation": {
@@ -38,19 +52,31 @@
             "number": 1,
             "name": "Sesión 1",
             "status": "NOT_SEEN",
-            "isLastView": false
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 19,
+              "totalVideos": 27
+            }
           },
           {
             "number": 2,
             "name": "Sesión 2",
             "status": "NOT_SEEN",
-            "isLastView": false
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 12,
+              "totalVideos": 27
+            }
           },
           {
             "number": 3,
             "name": "Sesión 3",
             "status": "SEEN",
-            "isLastView": true
+            "isLastView": true,
+            "videosInformation": {
+              "lastVideoSeen": 8,
+              "totalVideos": 23
+            }
           }
         ],
         "current": 2,
@@ -59,6 +85,7 @@
       "name": "Trimestre 2"
     },
     {
+      "course": 1,
       "id": 3,
       "number": 3,
       "sessionInformation": {
@@ -67,13 +94,53 @@
             "number": 1,
             "name": "Sesión 1",
             "status": "SEEN",
-            "isLastView": false
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 8,
+              "totalVideos": 16
+            }
           },
           {
             "number": 2,
             "name": "Sesión 2",
             "status": "NOT_SEEN",
-            "isLastView": false
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 12,
+              "totalVideos": 16
+            }
+          }
+        ],
+        "current": 1,
+        "total": 2
+      },
+      "name": "Trimestre 3"
+    },
+    {
+      "course": 2,
+      "id": 3,
+      "number": 3,
+      "sessionInformation": {
+        "sessions": [
+          {
+            "number": 1,
+            "name": "Sesión 1",
+            "status": "SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 8,
+              "totalVideos": 16
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sesión 2",
+            "status": "NOT_SEEN",
+            "isLastView": true,
+            "videosInformation": {
+              "lastVideoSeen": 12,
+              "totalVideos": 16
+            }
           }
         ],
         "current": 1,

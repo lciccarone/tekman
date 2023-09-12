@@ -1,3 +1,7 @@
-<div class='container'>
+<div class='container' [style.filter]='(isConfigurationOpen$ | async) === true? "blur(8px)" : ""'>
   <router-outlet></router-outlet>
 </div>
+<app-drop-down-panel *ngIf='(isConfigurationOpen$ | async) === true'>
+  <app-configuration></app-configuration>
+</app-drop-down-panel>
+

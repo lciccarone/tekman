@@ -1,0 +1,27 @@
+{
+  "home": {
+    "agenda": "Temario",
+    "come_back": "Volve de donde lo dejaste",
+    "ordered_reproduction": "Reproducción ordenada",
+    "shuffle": "Aleatorio",
+    "next_session": "Siguiente sesiòn"
+  },
+  "detail": {
+    "quarter_sessions": "Sesiones del {{number}}º trimestre"
+  },
+  "header": {
+    "cards": "Tarjetas"
+  },
+  "configuration": {
+    "configuration": "Configuración",
+    "language": "idioma",
+    "course": "curso",
+    "save": "Guardar cambios",
+    "close": "Cerrar sin guardar"
+  },
+  "shared": {
+    "quarter": "Trimestre",
+    "session": "Sesión",
+    "sessions": "Sesiones"
+  }
+}

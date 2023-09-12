@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+
+export interface Option {
+  value: string;
+  label: string;
+}
 
 @Component({
   selector: 'app-dropdown',
@@ -6,5 +12,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent {
-
+  @Input() formControlNameSelect: string;
+  @Input() form: FormGroup;
+  @Input() label: string;
+  @Input() options: Option[];
 }

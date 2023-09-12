@@ -1,9 +1,10 @@
 <app-card class='card'>
-  <b>Vuelve donde lo dejaste</b>
-  <p>{{lastQuarter.number}}ªtrimestre <span>Sesión {{lastSession.number}}, {{lastSession.name}}</span></p>
+  <b>{{'home.come_back' | translate}}</b>
+  <p>{{lastQuarter.number}}º {{'shared.quarter' | translate}} <span>{{'shared.session' | translate}} {{lastSession.number}}
+    , {{lastSession.name}}</span></p>
   <div class='button-container'>
-    <app-button class='button' [iconName]='"play"' [label]='"Reproduccion ordenada"'></app-button>
-    <app-button class='button' [iconName]='"random"' [variant]='"secondary"' [label]='"Aleatorio"'></app-button>
-    <app-button class='button' [iconName]='"next"' [variant]='"secondary"' [label]='"Siguiente sesion"'></app-button>
+    <app-button class='button' [iconName]='"play"' [label]='"home.ordered_reproduction" | translate'></app-button>
+    <app-button class='button' [iconName]='"random"' [variant]='"secondary"' [label]='"home.shuffle" | translate'></app-button>
+    <app-button class='button' [iconName]='"next"' [variant]='"secondary"' [label]='"home.next_session" | translate'></app-button>
   </div>
 </app-card>
