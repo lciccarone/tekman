@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+app-quarter-card {
+  flex: 30%;
+}
+
+app-session-list {
+  flex: 70%;
+}
+
+.card {
+  display: inline-block;
+  width: 211px;
+  height: 90px;
+}
+

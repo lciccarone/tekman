@@ -1,0 +1,28 @@
+@import "/src/app/shared/styles/colors";
+
+.card {
+  display: block;
+  width: 70vw;
+}
+
+.container-list {
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.text-information {
+  display: inline-block;
+  float: right;
+  padding: 4px 9px;
+  font-size: 20px;
+  color: $primary;
+  background-color: $chart;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+
+.line {
+  padding: 10px;
+  border-bottom: 1px solid $shadow; /* Puedes ajustar el grosor y el color de la línea según tus preferencias */
+}

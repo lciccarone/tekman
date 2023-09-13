@@ -35,6 +35,56 @@
               "lastVideoSeen": 3,
               "totalVideos": 27
             }
+          },
+          {
+            "number": 4,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
+          },
+          {
+            "number": 5,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
+          },
+          {
+            "number": 6,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
+          },
+          {
+            "number": 7,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
+          },
+          {
+            "number": 8,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
           }
         ],
         "current": 3,

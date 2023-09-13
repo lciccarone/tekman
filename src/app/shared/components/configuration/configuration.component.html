@@ -2,13 +2,22 @@
   <button class="button-close top-left">
     <img (click)='closeConfiguration()' [src]='"assets/icons/arrow-left.svg"'>
   </button>
-  <h2>{{'configuration.configuration' | translate}}</h2>
-  <app-dropdown [label]='"configuration.language" | translate' [form]='configurationForm'
-                [formControlNameSelect]='"language"'
-                [options]='languageOptions'></app-dropdown>
-  <app-dropdown [label]='"configuration.course" | translate' [form]='configurationForm'
-                [formControlNameSelect]='"course"'
-                [options]='courseOptions'></app-dropdown>
-  <app-button (click)='updateConfig()' [label]='"configuration.save" | translate'></app-button>
-  <a (click)='closeConfiguration()'>{{"configuration.close" | translate}}</a>
+  <div class="top">
+    <h2>{{'configuration.configuration' | translate}}</h2>
+  </div>
+  <div class="container-button">
+    <app-dropdown [label]='"configuration.language" | translate' [form]='configurationForm'
+                  [formControlNameSelect]='"language"'
+                  [options]='languageOptions'></app-dropdown>
+    <app-dropdown [label]='"configuration.course" | translate' [form]='configurationForm'
+                  [formControlNameSelect]='"course"'
+                  [options]='courseOptions'></app-dropdown>
+  </div>
+  <div class="bottom">
+    <app-button (click)='updateConfig()' [label]='"configuration.save" | translate'></app-button>
+    <br><br>
+    <a (click)='closeConfiguration()'>{{"configuration.close" | translate}}</a>
+  </div>
+
+
 </div>

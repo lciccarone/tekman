@@ -1,4 +1,4 @@
-<app-header (toggleConfigurationEmitter)='toggleConfiguration()'></app-header>
+<app-header (toggleConfigurationEmitter)='openConfiguration()'></app-header>
 <app-session-selector
   *ngIf='(loading$ | async) === false'
   [quarters]='quarters$ | async'

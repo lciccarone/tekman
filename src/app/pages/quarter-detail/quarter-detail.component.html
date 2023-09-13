@@ -1,2 +1,5 @@
-<app-quarter-card *ngIf='(loading$ | async) === false' [quarter]='quarter$ | async'></app-quarter-card>
-<app-session-list *ngIf='(loading$ | async) === false' [quarter]='quarter$ | async'></app-session-list>
+<app-header></app-header>
+<div class="container">
+  <app-quarter-card class="card" *ngIf='(loading$ | async) === false' [quarter]='quarter$ | async'></app-quarter-card>
+  <app-session-list *ngIf='(loading$ | async) === false' [quarter]='quarter$ | async'></app-session-list>
+</div>

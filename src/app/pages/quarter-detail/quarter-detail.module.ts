@@ -8,9 +8,10 @@ import { CardModule } from '../../shared/components/card/card.module';
 import { SessionListComponent } from './components/session-list/session-list.component';
 import { SessionItemComponent } from './components/session-item/session-item.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { HeaderModule } from '../../shared/components/header/header.module';
 
 @NgModule({
   declarations: [QuarterDetailComponent, SessionListComponent, SessionItemComponent],
-  imports: [CommonModule, QuarterDetailRoutingModule, QuarterCardModule, CardModule, TranslateModule]
+  imports: [CommonModule, QuarterDetailRoutingModule, QuarterCardModule, CardModule, TranslateModule, HeaderModule]
 })
 export class QuarterDetailModule {}

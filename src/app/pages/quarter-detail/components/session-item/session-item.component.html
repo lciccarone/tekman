@@ -1,11 +1,18 @@
-<p (click)='selectSession()' [ngClass]='{"" : isSelected}'>
-  <b>{{session.number}}</b>{{session.name}}
-  <img *ngIf='!isSelected'
-       [src]='(session.status === ViewStatus.SEEN) ? "assets/icons/seen.svg" : "assets/icons/not_seen.svg"'>
-  <img *ngIf='isSelected'
-       [src]='"assets/icons/play_one.svg"'
-       (click)='playSession()'>
-  <img *ngIf='isSelected'
-       [src]='"assets/icons/random.svg"'
-       (click)='suffleSession()'>
-</p>
+<div class="container" (click)='selectSession()' [ngClass]='{"selected" : isSelected}'>
+  <b class="session-number">{{session.number}}</b>
+  <p class="session-name">{{session.name}}</p>
+  <div class="actions">
+    <button class="action-button" *ngIf='!isSelected'>
+      <img
+        [src]='(session.status === ViewStatus.SEEN) ? "assets/icons/seen.svg" : "assets/icons/not_seen.svg"'>
+    </button>
+    <button class="action-button" *ngIf='isSelected'>
+      <img
+        [src]='"assets/icons/random_white.svg"'
+        (click)='suffleSession()'></button>
+    <button class="action-button play-button" *ngIf='isSelected'>
+      <img
+        [src]='"assets/icons/play_one.svg"'
+        (click)='playSession()'></button>
+  </div>
+</div>

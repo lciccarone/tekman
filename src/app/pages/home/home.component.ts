@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   public quarters$: Observable<Quarter[]>;
   public loading$: Observable<boolean>;
   public quarterWithLastSessionView: Quarter;
-  private isConfigurationOpen: boolean = false;
   private onDestroy$: Subject<boolean> = new Subject();
 
   constructor(
@@ -28,8 +27,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    const course = this.route.snapshot.queryParams['course'] ?? 1;
-    this.quartersState$.dispatch(getQuartersRequest({ course }));
+    this.route.queryParams.pipe(takeUntil(this.onDestroy$)).subscribe((queryParams) => {
+      this.quartersState$.dispatch(getQuartersRequest({ course: queryParams['course'] ?? 1 }));
+    });
+
     this.quarters$ = this.quartersState$.pipe(
       takeUntil(this.onDestroy$),
       select(selectQuarters),
@@ -40,9 +41,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.loading$ = this.quartersState$.pipe(takeUntil(this.onDestroy$), select(selectLoading));
   }
 
-  public toggleConfiguration(): void {
-    this.isConfigurationOpen = !this.isConfigurationOpen;
-    this.configurationService.toggleConfiguration(this.isConfigurationOpen);
+  public openConfiguration(): void {
+    this.configurationService.toggleConfiguration(true);
   }
 
   private findQuarterWithLastSessionView(quarters: Quarter[]): Quarter {
