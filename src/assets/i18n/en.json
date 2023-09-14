@@ -1,0 +1,34 @@
+{
+  "home": {
+    "agenda": "lorem ipsum",
+    "come_back": "lorem ipsum",
+    "ordered_reproduction": "lorem ipsum",
+    "shuffle": "lorem ipsum",
+    "next_session": "lorem ipsum"
+  },
+  "detail": {
+    "quarter_sessions": "lorem ipsum"
+  },
+  "header": {
+    "cards": "lorem ipsum"
+  },
+  "configuration": {
+    "configuration": "lorem ipsum",
+    "language": "lorem ipsum",
+    "course": "lorem ipsum",
+    "save": "lorem ipsum",
+    "close": "lorem ipsum"
+  },
+  "play": {
+    "before_starting": "lorem ipsum",
+    "start_pass": "lorem ipsum",
+    "volume": "lorem ipsum",
+    "stopwatch": "lorem ipsum",
+    "pause": "lorem ipsum"
+  },
+  "shared": {
+    "quarter": "lorem ipsum",
+    "session": "lorem ipsum",
+    "sessions": "lorem ipsum"
+  }
+}

@@ -17,10 +17,12 @@ export class SessionSelectorComponent implements OnInit {
   }
 
   private findQuarterWithLastView() {
-    this.lastQuarter = this.quarters.find(quarter => !!quarter.sessionInformation.sessions.find(session => session.isLastView));
+    this.lastQuarter = this.quarters.find(
+      (quarter) => !!quarter.sessionInformation.sessions.find((session) => session.isLastView)
+    );
   }
 
   private findLastSession() {
-    this.lastSession = this.lastQuarter.sessionInformation.sessions.find(session => session.isLastView);
+    this.lastSession = this.lastQuarter.sessionInformation.sessions.find((session) => session.isLastView);
   }
 }

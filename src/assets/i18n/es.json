@@ -19,6 +19,13 @@
     "save": "Guardar cambios",
     "close": "Cerrar sin guardar"
   },
+  "play": {
+    "before_starting": "Antes de empezar...",
+    "start_pass": "Empezar pase",
+    "volume": "Asegúrate de tener el **volumen activado**",
+    "stopwatch": "Los bits pasan automáticamente **cada 2 segundos.**",
+    "pause": "Puedes detener el pase con la **barra espaciadora** o haciendo **clic en la pantalla.**"
+  },
   "shared": {
     "quarter": "Trimestre",
     "session": "Sesión",

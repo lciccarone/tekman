@@ -35,7 +35,7 @@ export class ConfigurationComponent {
     course: ['1']
   });
 
-  updateConfig(): void {
+  public updateConfig(): void {
     this.router.navigate([], {
       relativeTo: this.route,
       queryParams: this.configurationForm.value,
@@ -44,7 +44,7 @@ export class ConfigurationComponent {
     this.closeConfiguration();
   }
 
-  closeConfiguration(): void {
+  public closeConfiguration(): void {
     this.configurationService.toggleConfiguration(false);
   }
 }

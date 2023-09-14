@@ -7,8 +7,38 @@
       "sessionInformation": {
         "sessions": [
           {
+            "number": 10,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
+          },
+          {
+            "number": 9,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
+          },
+          {
+            "number": 12,
+            "name": "Sesión 3",
+            "status": "NOT_SEEN",
+            "isLastView": false,
+            "videosInformation": {
+              "lastVideoSeen": 3,
+              "totalVideos": 27
+            }
+          },
+          {
             "number": 1,
-            "name": "Sesión 1",
+            "name": "Ordinales",
             "status": "SEEN",
             "isLastView": false,
             "videosInformation": {
@@ -18,7 +48,7 @@
           },
           {
             "number": 2,
-            "name": "Sesión 2",
+            "name": "Ordinales y fracciones",
             "status": "SEEN",
             "isLastView": false,
             "videosInformation": {
@@ -28,7 +58,7 @@
           },
           {
             "number": 3,
-            "name": "Sesión 3",
+            "name": "Fracciones y decimales",
             "status": "NOT_SEEN",
             "isLastView": false,
             "videosInformation": {
@@ -38,7 +68,7 @@
           },
           {
             "number": 4,
-            "name": "Sesión 3",
+            "name": "Ordinales, Fracciones y Decimales",
             "status": "NOT_SEEN",
             "isLastView": false,
             "videosInformation": {
@@ -48,7 +78,7 @@
           },
           {
             "number": 5,
-            "name": "Sesión 3",
+            "name": "Ordinales, Fracciones, Decimales y Geometria",
             "status": "NOT_SEEN",
             "isLastView": false,
             "videosInformation": {
@@ -58,7 +88,7 @@
           },
           {
             "number": 6,
-            "name": "Sesión 3",
+            "name": "Geometria y Fracciones",
             "status": "NOT_SEEN",
             "isLastView": false,
             "videosInformation": {
@@ -68,7 +98,7 @@
           },
           {
             "number": 7,
-            "name": "Sesión 3",
+            "name": "Fracciones, Decimales y Geometria",
             "status": "NOT_SEEN",
             "isLastView": false,
             "videosInformation": {
@@ -78,7 +108,7 @@
           },
           {
             "number": 8,
-            "name": "Sesión 3",
+            "name": "Ordinales, Fracciones, Decimales, Geometria, Numeros",
             "status": "NOT_SEEN",
             "isLastView": false,
             "videosInformation": {
@@ -87,8 +117,8 @@
             }
           }
         ],
-        "current": 3,
-        "total": 3
+        "current": 9,
+        "total": 11
       },
       "name": "Trimestre 1"
     },

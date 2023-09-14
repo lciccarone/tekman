@@ -11,10 +11,9 @@ export class SessionItemComponent {
   @Input() session: Session;
   @Input() isSelected: boolean;
   @Output() clickEmitter: EventEmitter<number> = new EventEmitter<number>();
+  protected readonly ViewStatus = ViewStatus;
 
   constructor(private router: Router) {}
-
-  protected readonly ViewStatus = ViewStatus;
 
   public selectSession(): void {
     this.clickEmitter.emit(this.session.number);
@@ -24,7 +23,7 @@ export class SessionItemComponent {
     this.router.navigate(['/play', this.session.videosInformation.lastVideoSeen]);
   }
 
-  public suffleSession(): void {
+  public shuffleSession(): void {
     this.router.navigate(['/play', this.getRandomInteger(0, this.session.videosInformation.totalVideos)]);
   }
 

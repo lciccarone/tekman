@@ -8,7 +8,7 @@ export class ConfigurationService {
   private configurationSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   public configuration$: Observable<boolean> = this.configurationSubject.asObservable();
 
-  toggleConfiguration(isOpen: boolean) {
+  public toggleConfiguration(isOpen: boolean): void {
     this.configurationSubject.next(isOpen);
   }
 }

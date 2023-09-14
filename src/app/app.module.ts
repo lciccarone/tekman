@@ -10,6 +10,7 @@ import { reducers } from './store';
 import { CoreModule } from './core/core.module';
 import { DropDownPanelModule } from './shared/components/drop-down-panel/drop-down-panel.module';
 import { ConfigurationModule } from './shared/components/configuration/configuration.module';
+import { MarkdownModule } from 'ngx-markdown';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,6 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    MarkdownModule.forRoot(),
     StoreModule.forRoot(reducers),
     DropDownPanelModule,
     ConfigurationModule

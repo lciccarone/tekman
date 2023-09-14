@@ -1,1 +1,32 @@
-<p>play-video works!</p>
+<div class="container">
+  <div class="row">
+    <div class="column"><h1>{{'play.before_starting' | translate}}</h1></div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img [src]="'assets/icons/volume.svg'">
+    </div>
+    <div class="column">
+      <img [src]="'assets/icons/stopwatch.svg'">
+    </div>
+    <div class="column">
+      <img [src]="'assets/icons/pause.svg'">
+    </div>
+  </div>
+  <div class="row text">
+    <div class="column">
+      <p markdown [data]="'play.volume' | translate"></p>
+    </div>
+    <div class="column">
+      <p markdown [data]="'play.stopwatch' | translate"></p>
+    </div>
+    <div class="column">
+      <p markdown [data]="'play.pause' | translate"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <app-button [iconName]="'play'" [label]="'play.start_pass' | translate"></app-button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+@import "/src/app/shared/styles/colors";
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  background-color: $grey_light;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.text {
+  align-items: flex-start; /* Alinea el texto en la parte superior de los divs */
+}

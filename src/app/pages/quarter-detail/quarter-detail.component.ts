@@ -7,6 +7,7 @@ import { selectLoading, selectQuarters } from '../../store/quarters/quarters.sel
 import { Observable, Subject } from 'rxjs';
 import { Quarter } from '../../core/models/quarter';
 import { ActivatedRoute } from '@angular/router';
+import { ConfigurationService } from '../../core/services/configuration.service';
 
 @Component({
   selector: 'app-quarter-detail',
@@ -20,6 +21,7 @@ export class QuarterDetailComponent implements OnInit, OnDestroy {
 
   constructor(
     private route: ActivatedRoute,
+    private configurationService: ConfigurationService,
     private quartersState$: Store<QuartersState>
   ) {}
 
@@ -33,6 +35,10 @@ export class QuarterDetailComponent implements OnInit, OnDestroy {
       map((quarter) => quarter[0])
     );
     this.loading$ = this.quartersState$.pipe(takeUntil(this.onDestroy$), select(selectLoading));
+  }
+
+  public openConfiguration(): void {
+    this.configurationService.toggleConfiguration(true);
   }
 
   ngOnDestroy(): void {
