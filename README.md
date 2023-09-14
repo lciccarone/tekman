@@ -1,10 +1,10 @@
 # Tekman
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1 and Node version 18.10.0.
 
 ## Development api
 
-Run `npm run api` for a dev server. the API base url is `http://localhost:3000`.
+Run `npm run api` for a api dev server. the API base url is `http://localhost:3000`.
 
 ## Development server
 
@@ -12,4 +12,4 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The 
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
